@@ -1,0 +1,22 @@
+HQSML-151665:createdup pkrish00c$ git clone --bare https://github.com/PK-Containers/Step1.git
+    Cloning into bare repository 'Step1.git'...
+    remote: Counting objects: 27, done.
+    remote: Compressing objects: 100% (23/23), done.
+    remote: Total 27 (delta 9), reused 3 (delta 0), pack-reused 0
+    Unpacking objects: 100% (27/27), done.
+HQSML-151665:createdup pkrish00c$ ls
+    Step1.git
+HQSML-151665:createdup pkrish00c$ cd Step1.git/
+HQSML-151665:Step1.git pkrish00c$ git push --mirror https://github.com/PK-Containers/Step1a.git
+    Counting objects: 27, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (23/23), done.
+    Writing objects: 100% (27/27), 3.45 KiB | 0 bytes/s, done.
+    Total 27 (delta 9), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (9/9), done.
+    To https://github.com/PK-Containers/Step1a.git
+     + 075d393...fc5bdf2 master -> master (forced update)
+HQSML-151665:Step1.git pkrish00c$ cd ..
+HQSML-151665:createdup pkrish00c$ ls
+    Step1.git
+HQSML-151665:createdup pkrish00c$ rm -rf Step1.git/
